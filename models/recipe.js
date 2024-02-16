@@ -2,11 +2,17 @@ const mongoose = require('mongoose')
 
 const recipeingredientSchema = new mongoose.Schema(
     {
-        recipeId: {type: mongoose.Schema.Types.ObjectId, ref: 'Recipe'},
-        ingredientId: {type: mongoose.Schema.Types.ObjectId, ref: 'Ingredient'},
-        amount: {type: Number, required: true},
-        unitId: {type: mongoose.Schema.Types.ObjectId, ref: 'Recipe'},
-
+        userId: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+        title: {type: String, required: true},
+        description: {type: String, required: true},
+        instructions: {type: String, required: true},
+        diet: {type: String, required: true},
+        meal: {type: String, required: true},
+        prep_time: {type: String, required: true},
+        cook_time: {type: String, required: true},
+        img_path: {type: String, required: true},
+        notes: {type: String, required: true},
+        source: {type: String, required: true},
     },
     {timestamps: true}
 )
