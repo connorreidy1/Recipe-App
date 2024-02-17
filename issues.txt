@@ -1,0 +1,19 @@
+1.
+
+How to write the FK of the recipe in ingredients
+would normally write something like:
+
+ const castIronSkilletFrittata = await Recipe.find({ name: 'Cast Iron Skillet Frittata' }) 
+
+ then write: recipeId: castIronSkilletFrittata[0]_id
+
+ I can't write the "const" for all new recipes
+
+
+ 2.
+ character limit for some of the inputs
+
+
+
+ STRETCH
+ - cuisine type
