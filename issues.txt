@@ -14,6 +14,16 @@ would normally write something like:
  character limit for some of the inputs
 
 
+3.
+If a field is empty (like gluten_free, or diet, or notes) then create a function that if empty don't display this text. 
+
+4. should vegatarian, vegan, paleo being individual booleans?
+
+5. capitalize words at the start of steps for instructions or ingredients
+
+6. pluralizing ingredient if the quanity is more than one
+
+7. for ingredients should there be a parameter for prepping (finely chopped, grated, thinly sliced, juiced)
 
  STRETCH
  - cuisine type

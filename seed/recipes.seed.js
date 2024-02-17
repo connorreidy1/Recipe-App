@@ -78,6 +78,71 @@ const main = async() => {
             notes: "Do Ahead: Vodka sauce can be made 5 days ahead; cover and chill.",
             source: "Leni's House of Pan",
         },
+        {
+            title: "Spicy Udon Stir Fry",
+            description: "Spicy udon noodles with chicken, red pepper, and spinach in a savory chili garlic sauce, topped with sesame seeds and cilantro.",
+            preparation: [
+                "Slice onions, peppers, broccoli and set aside.",
+                "Cut chicken into small pieces.",
+                "In a large frying pan, heat oil over medium-high heat until very hot and add in red pepper flakes.",  
+                "Cook chicken until outside is cooked (about 3 min. per side).",
+                "Add onions, peppers, broccoli (if using) and let cook for about 5-6 min., letting the veggies char.",
+                "Boil water and drop in udon noodles, cooking for just 2-3 min.",
+                "Drain noodles and add to the stir fry.",
+                "Add sauce and stir together, cooking for another 30 seconds.",
+                "Add the spinach and cook until softened.",
+                "Distribute into bowls and garnish with fresh cilantro and sesame seeds."
+            ],
+            meal: "dinner",
+            prep_time: 25,
+            cook_time: 25,
+            img_path: "assets/dinner/fusilliallavodka.jpg",
+            notes: "Also a great recipe if you want to substitute the chicken for steadk.",
+            source: "Leni's House of Pan",
+        },
+        {
+            title: "Moo's Chocolate Chip Chookies",
+            description: "Homemade chocolate chip cookies, soft and chewy, with Ghirardelli bittersweet morsels. Simple ingredients for a classic treat.",
+            preparation: [
+                "Preheat oven to 375 F",
+                "Combine flour, baking soda, and salt in a small bowl.",
+                "Cream together butter, sugars, and vanilla extract in a large bowl or mixer.",
+                "Add eggs, one at a time, to the butter mixture, beating well after each addition.",
+                "Gradually beat flour mixture and water into the wet ingredients until well combined.",
+                "Stir in morsels.",
+                "Bake 12 min. or until golden brown."
+            ],
+            diet: "vegetarian",
+            meal: "dessert",
+            prep_time: 30,
+            cook_time: 12,
+            img_path: "assets/dessert/mooschocolatecookies.jpg",
+            notes: "OPTIONAL: sprinkle with sea salt when hot out of the oven. The recipe is for high altitude baking. Adjust bake time depending on your area.",
+            source: "food.com",
+        },
+        {
+            title: "Claire Saffitz Chocolate Chip Chookies",
+            description: "Soft and chewy chocolate chip cookies with browned butter, two kinds of chocolate, and a sprinkle of flaky salt. Delightfully indulgent!",
+            preparation: [
+                "In a small saucepan, melt 1 stick of butter over medium-low heat, stirring frequently, until the butter comes to a boil. Continue to cook, scraping the bottom and sides of the pan constantly with a heatproof spatula, until the butter sputters, foams, and eventually you see browned bits floating about, 5 to 7 minutes.",
+                "Place the other stick of butter in a large bowl and add  browned butter, making sure you scrape in all the browned bits, then add the heavy cream. Whisk continuously until the butter is melted and smooth. Put it in the refrigerator while you prepare the next steps",
+                "In a medium bowl, whisk together the flour, salt, and baking soda to combine. Set it aside.",
+                "Take the butter bowl out of the refrigerator and whisk it to ensure it’s smooth and non-congealed. Add the brown and granulated sugars and whisk vigorously until the mixture is very smooth and thick, about 45 seconds. Add the eggs one at a time, whisking in between. Add vanilla and whisk until the mixture is satiny, about 45 seconds.",
+                "Add the flour mixture and whisk until the batter is smooth and well combined (can also use a standing mixer).",
+                "Add both the chocolates and mix to combine. Set the batter aside for 5 minutes to firm up slightly.",
+                "Using a 2-ounce scoop or ¼ cup measure, scoop level portions of dough and roll between hands to form balls. Place on a parchment-lined baking sheet as close together as possible. Cover the sheet tightly with plastic wrap and refrigerate for at least 12 hours and up to 48 (if you're pressed for time, a couple of hours in the refrigerator will do-just note the baked cookies won't be as chewy or wrinkly-looking).",
+                "When you're ready to bake, heat the oven to 180 ºC (350 °F). Line the baking sheet with parchment paper.",
+                "Place a few inches apart to allow for spreading when cooked.",
+                "Bake the cookies until they are dark golden brown around the edges, 13–15 minutes. Allow the cookies to rest for 5 minutes on the baking sheets, then use a metal spatula to transfer the cookies to a wire rack to cool.",
+            ],
+            diet: "vegetarian",
+            meal: "dessert",
+            prep_time: 30,
+            cook_time: 15,
+            img_path: "assets/dessert/clairesaffitzchocolatechipcookies.jpg",
+            notes: "Optional: sprinkle some of them with flakey salt!",
+            source: "Claire Saffitz",
+        },
     ]
     try {
         // Remove existing units in case of re-seeding
@@ -89,6 +154,7 @@ const main = async() => {
     } catch (error) {
         console.error('Error seeding recipes:', error);
     }
+    
 }
 
 const run = async() => {
