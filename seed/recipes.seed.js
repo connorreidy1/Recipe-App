@@ -74,10 +74,9 @@ const main = async() => {
             meal: "dinner",
             prep_time: 20,
             cook_time: 30,
-            img_path: {type: String},
+            img_path: "assets/dinner/fusilliallavodka.jpg",
             notes: "Do Ahead: Vodka sauce can be made 5 days ahead; cover and chill.",
-            source: {type: String},
-            gluten_free: {type: Boolean, default: false},
+            source: "Leni's House of Pan",
         },
     ]
     try {
