@@ -10,7 +10,8 @@ Recipe app capable of storing, adding and updating recipes
 
 # MVP (Minimum Viable Product)
     - Implement CRUD functionality for recipes and ingredients
-    - Create recipe categories (i.e. Breakfast, Lunch, Snack, Dinner, Dessert) - Add a search feature that can find recipes based on different inputs 
+    - Create recipe categories (i.e. Breakfast, Lunch, Snack, Dinner, Dessert) 
+    - Add a search feature that can find recipes based on different inputs 
 
 # Stretch Goals
     - Create features such as ratings and comments
