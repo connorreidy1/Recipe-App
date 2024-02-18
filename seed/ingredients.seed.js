@@ -4,23 +4,26 @@ const Unit = require('../models/ingredient.model')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async() => {
-    const units = [
+    const ingredients = [
         {name: 'egg'},
         {name: 'onion'},
         {name: 'garlic'},
         {name: 'potato'},
         {name: 'bacon lardons'},
         {name: 'spinach'},
-        {name: 'shredded cheddar cheese'},
+        {name: 'cheddar cheese'},
         {name: 'paprika'},
         {name: 'salt'},
         {name: 'pepper'},
         {name: 'olive oil'},
         {name: 'flour'},
+        {name: 'all-purpose flour'},
+        {name: 'self-rising flour'},
         {name: 'sugar'},
         {name: 'baking powder'},
         {name: 'baking soda'},
-        {name: 'milk'},
+        {name: 'whole milk'},
+        {name: 'skim milk'},
         {name: 'melted butter'},
         {name: 'banana'},
         {name: 'blueberries'},
@@ -35,11 +38,12 @@ const main = async() => {
         {name: 'cumin'},
         {name: 'lime'},
         {name: 'tabasco sauce'},
+        {name: 'hot sauce'},
         {name: 'tortilla'},
         {name: 'guacamole'},
         {name: 'sour cream'},
         {name: 'cilantro'},
-        {name: 'cheddar chees'},
+        {name: 'cheddar cheese'},
         {name: 'shallot'},
         {name: 'tomato paste'},
         {name: 'vodak'},
@@ -59,7 +63,12 @@ const main = async() => {
         {name: 'brown sugar'},
         {name: 'fresh ginger'},
         {name: 'sesame seeds'},
-        {name: ''},
+        {name: 'granulated sugar'},
+        {name: 'vanilla extract'},
+        {name: 'water'},
+        {name: 'bittersweet chocolate chips'},
+        {name: 'kosher salt'},
+        {name: 'milk choclate disks'},
     ]
     
     try {

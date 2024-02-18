@@ -20,10 +20,14 @@ const main = async() => {
         {name: 'drop'},
         {name: 'clove'},
         {name: 'sprig'},
+        {name: 'bunch'},
         {name: 'cube'},
         {name: 'can'},
         {name: 'stick'},
-        {name: 'pack'}
+        {name: 'pack'},
+        {name: 'large'},
+        {name: 'medium'},
+        {name: 'small'}
     ]
     try {
         // Remove existing units in case of re-seeding
