@@ -1,5 +1,5 @@
 const db = require('../db')
-const Unit = require('../models/recipe.model')
+const Recipe = require('../models/recipe.model')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -102,7 +102,7 @@ const main = async() => {
             source: "Leni's House of Pan",
         },
         {
-            title: "Moo's Chocolate Chip Chookies",
+            title: "Moo's Chocolate Chip Cookies",
             description: "Homemade chocolate chip cookies, soft and chewy, with Ghirardelli bittersweet morsels. Simple ingredients for a classic treat.",
             preparation: [
                 "Preheat oven to 375 F",
@@ -122,7 +122,7 @@ const main = async() => {
             source: "food.com",
         },
         {
-            title: "Claire Saffitz Chocolate Chip Chookies",
+            title: "Claire Saffitz Chocolate Chip Cookies",
             description: "Soft and chewy chocolate chip cookies with browned butter, two kinds of chocolate, and a sprinkle of flaky salt. Delightfully indulgent!",
             preparation: [
                 "In a small saucepan, melt 1 stick of butter over medium-low heat, stirring frequently, until the butter comes to a boil. Continue to cook, scraping the bottom and sides of the pan constantly with a heatproof spatula, until the butter sputters, foams, and eventually you see browned bits floating about, 5 to 7 minutes.",
@@ -147,10 +147,10 @@ const main = async() => {
     ]
     try {
         // Remove existing units in case of re-seeding
-        await Unit.deleteMany({});
+        await Recipe.deleteMany({});
         console.log('Previously seeded recipes removed.')
         // Insert new units
-        await Unit.insertMany(units);
+        await Recipe.insertMany(recipes);
         console.log('Recipes seeded successfully!');
     } catch (error) {
         console.error('Error seeding recipes:', error);

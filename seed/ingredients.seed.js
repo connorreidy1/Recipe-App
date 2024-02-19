@@ -1,5 +1,5 @@
 const db = require('../db')
-const Unit = require('../models/ingredient.model')
+const Ingredient = require('../models/ingredient.model')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -25,7 +25,7 @@ const main = async() => {
         {name: 'baking soda'},
         {name: 'whole milk'},
         {name: 'skim milk'},
-        {name: 'melted butter'},
+        {name: 'butter'},
         {name: 'banana'},
         {name: 'blueberries'},
         {name: 'maple syrup'},
@@ -47,8 +47,9 @@ const main = async() => {
         {name: 'cheddar cheese'},
         {name: 'shallot'},
         {name: 'tomato paste'},
-        {name: 'vodak'},
+        {name: 'vodka'},
         {name: 'heavy cream'},
+        {name: 'half-and-half'},
         {name: 'crushed red pepper flakes'},
         {name: 'fusilli'},
         {name: 'unsalted butter'},
@@ -62,6 +63,7 @@ const main = async() => {
         {name: 'rice wine vinegar'},
         {name: 'sesame oil'},
         {name: 'brown sugar'},
+        {name: 'dark brown sugar'},
         {name: 'fresh ginger'},
         {name: 'sesame seeds'},
         {name: 'granulated sugar'},
@@ -69,15 +71,16 @@ const main = async() => {
         {name: 'water'},
         {name: 'bittersweet chocolate chips'},
         {name: 'Kosher salt'},
-        {name: 'milk choclate disks'},
+        {name: 'milk chocolate disks'},
+        {name: 'bittersweet chocolate disks'},
     ]
     
     try {
         // Remove existing ingredients in case of re-seeding
-        await Unit.deleteMany({})
+        await Ingredient.deleteMany({})
         console.log('Previously seeded ingredients removed.')
         // Insert new ingredients
-        await Unit.insertMany(units)
+        await Ingredient.insertMany(ingredients)
         console.log('Ingredients seeded successfully!');
     } catch (error) {
         // Handle duplicate key error

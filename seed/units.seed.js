@@ -7,7 +7,7 @@ const main = async() => {
     const units = [
         {name: 'tsp'},
         {name: 'tbsp'},
-        {name: 'cups'},
+        {name: 'cup'},
         {name: 'ounce'},
         {name: 'oz'},
         {name: 'pound'},

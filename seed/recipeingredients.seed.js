@@ -466,11 +466,151 @@ const main = async () => {
                 unitId: units.find(unit => unit.name === "cup")._id,
                 prep: 'coarsely chopped'
             },
+            //Moo's Chocolate Chip Cookies
             {
-                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Chookies")._id,
-                ingredientId: ingredients.find(ingredient => ingredient.name === "cilantro")._id,
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "flour")._id,
+                amount: 2.5,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "baking soda")._id,
+                amount: 1,
+                unitId: units.find(unit => unit.name === "tsp")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "salt")._id,
+                amount: 1,
+                unitId: units.find(unit => unit.name === "tsp")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "butter")._id,
+                amount: 1,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: 'softened'
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "granulated sugar")._id,
                 amount: .25,
                 unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "brown sugar")._id,
+                amount: 1,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "vanilla extract")._id,
+                amount: 1,
+                unitId: units.find(unit => unit.name === "tsp")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "egg")._id,
+                amount: 2,
+                unitId: units.find(unit => unit.name === "large")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "water")._id,
+                amount: 2,
+                unitId: units.find(unit => unit.name === "tsp")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Moo's Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "bittersweet chocolate chips")._id,
+                amount: 1.25,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "unsalted butter")._id,
+                amount: 226,
+                unitId: units.find(unit => unit.name === "g")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "half-and-half")._id,
+                amount: 28,
+                unitId: units.find(unit => unit.name === "g")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "all-purpose flour")._id,
+                amount: 2.25,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "Kosher salt")._id,
+                amount: 6,
+                unitId: units.find(unit => unit.name === "g")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "baking soda")._id,
+                amount: 6,
+                unitId: units.find(unit => unit.name === "g")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "dark brown sugar")._id,
+                amount: .75,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "granulated sugar")._id,
+                amount: .5,
+                unitId: units.find(unit => unit.name === "cup")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "egg")._id,
+                amount: 2,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "vanilla extract")._id,
+                amount: 142,
+                unitId: units.find(unit => unit.name === "g")._id,
+                prep: null
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "bittersweet chocolate disks")._id,
+                amount: 142,
+                unitId: units.find(unit => unit.name === "g")._id,
+                prep: 'coarsely chopped'
+            },
+            {
+                recipeId: recipes.find(recipe => recipe.title === "Claire Saffitz Chocolate Chip Cookies")._id,
+                ingredientId: ingredients.find(ingredient => ingredient.name === "milk chocolate disks")._id,
+                amount: 142,
+                unitId: units.find(unit => unit.name === "g")._id,
                 prep: 'coarsely chopped'
             },
         ];
