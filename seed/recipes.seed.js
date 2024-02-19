@@ -89,6 +89,7 @@ const main = async() => {
                 "Add onions, peppers, broccoli (if using) and let cook for about 5-6 min., letting the veggies char.",
                 "Boil water and drop in udon noodles, cooking for just 2-3 min.",
                 "Drain noodles and add to the stir fry.",
+                "Combine the chili garlic sauce, soy sauce, rice wine vinegar sesame oil, brown sugar, minced garlic and ginger to make the sauce",
                 "Add sauce and stir together, cooking for another 30 seconds.",
                 "Add the spinach and cook until softened.",
                 "Distribute into bowls and garnish with fresh cilantro and sesame seeds."

@@ -15,6 +15,7 @@ const main = async() => {
         {name: 'paprika'},
         {name: 'salt'},
         {name: 'pepper'},
+        {name: 'freshly ground pepper'},
         {name: 'olive oil'},
         {name: 'flour'},
         {name: 'all-purpose flour'},
@@ -55,7 +56,7 @@ const main = async() => {
         {name: 'fresh basil'},
         {name: 'broccoli'},
         {name: 'boneless-skinless chicken breast'},
-        {name: 'chili garlic sauce'},
+        {name: 'Asian chili garlic sauce'},
         {name: 'soy sauce'},
         {name: 'udon noodles'},
         {name: 'rice wine vinegar'},
@@ -67,7 +68,7 @@ const main = async() => {
         {name: 'vanilla extract'},
         {name: 'water'},
         {name: 'bittersweet chocolate chips'},
-        {name: 'kosher salt'},
+        {name: 'Kosher salt'},
         {name: 'milk choclate disks'},
     ]
     
