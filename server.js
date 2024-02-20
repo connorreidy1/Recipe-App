@@ -30,12 +30,25 @@ app.get('/', (req, res) => {
 
 // Get Recipes
 app.get('/recipes', recipeController.getAllRecipes)
+app.get('/recipes/:id', recipeController.getRecipeById)
+app.get('/recipes/name/:name/', recipeController.getRecipeByName)
+  //Create Recipe
+app.post('/recipes', recipeController.createRecipe)
+  //Update Recipe
+app.put('/recipes/:id', recipeController.updateRecipe)
+  //Delete Recipe
+app.delete('/recipes/:id', recipeController.deleteRecipe)
 
 // Get Ingredients
 app.get('/ingredients', ingredientController.getAllIngredients)
+app.get('/ingredients/:id', ingredientController.getIngredientById)
+app.get('/ingredients/name/:name', ingredientController.getIngredientByName)
 
 // Get Units
 app.get('/units', unitController.getAllUnits)
+app.get('/units/:id', unitController.getUnitById)
+app.get('/units/name/:name', unitController.getUnitByName)
 
 // Get RecipeIngredients
 app.get('/recipeingredients', recipeIngredientController.getAllRecipeIngredients)
+app.get('/recipeingredients/:id', recipeIngredientController.getRecipeIngredientById)

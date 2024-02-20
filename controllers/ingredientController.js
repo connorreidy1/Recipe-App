@@ -9,6 +9,33 @@ const getAllIngredients = async (req, res) => {
     }
 }
 
+const getIngredientById = async (req, res) => {
+    try {
+        const { id } = req.params
+        const ingredient = await Ingredient.findById(id)
+        if (ingredient) {
+            return res.json(ingredient)
+        }
+        return res.status(404).send('Ingredient with the specified ID does not exist')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
+const getIngredientByName = async (req, res) => {
+    try {
+        const { name } = req.params
+        const ingredient = await Ingredient.find({name: name})
+        if (ingredient) {
+            return res.json(ingredient)
+        }
+        return res.status(404).send('Ingredient with the specified name does not exist')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
 module.exports = {
-    getAllIngredients
+    getAllIngredients,
+    getIngredientById,
+    getIngredientByName
 }
