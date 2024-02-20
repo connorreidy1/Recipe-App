@@ -32,6 +32,7 @@ app.get('/', (req, res) => {
 app.get('/recipes', recipeController.getAllRecipes)
 app.get('/recipes/:id', recipeController.getRecipeById)
 app.get('/recipes/name/:name/', recipeController.getRecipeByName)
+app.get('/recipes/meal/:meal', recipeController.getRecipeByMealType)
   //Create Recipe
 app.post('/recipes', recipeController.createRecipe)
   //Update Recipe

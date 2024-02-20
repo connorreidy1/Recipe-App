@@ -71,12 +71,26 @@ const deleteRecipe = async (req, res) => {
     }
 }
 
+const getRecipeByMealType = async (req, res) => {
+    try {
+        const { meal } = req.params
+        const recipes = await Recipe.find({ meal })
+        if (recipes.length > 0) {
+            return res.json(recipes)
+        }
+        return res.status(404).send('Recipes with the specified meal type do not exist')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
 module.exports = {
     getAllRecipes,
     getRecipeById,
     getRecipeByName,
     createRecipe,
     updateRecipe,
-    deleteRecipe
+    deleteRecipe,
+    getRecipeByMealType
 
 }
