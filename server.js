@@ -44,6 +44,8 @@ app.delete('/recipes/:id', recipeController.deleteRecipe)
 app.get('/ingredients', ingredientController.getAllIngredients)
 app.get('/ingredients/:id', ingredientController.getIngredientById)
 app.get('/ingredients/name/:name', ingredientController.getIngredientByName)
+  //Delete Ingredient
+app.delete('/ingredients/:id', ingredientController.deleteIngredient)
 
 // Get Units
 app.get('/units', unitController.getAllUnits)
@@ -53,3 +55,4 @@ app.get('/units/name/:name', unitController.getUnitByName)
 // Get RecipeIngredients
 app.get('/recipeingredients', recipeIngredientController.getAllRecipeIngredients)
 app.get('/recipeingredients/:id', recipeIngredientController.getRecipeIngredientById)
+

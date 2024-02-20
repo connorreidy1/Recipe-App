@@ -1,4 +1,6 @@
 const Recipe = require('../models/recipe.model')
+const Ingredient = require('../models/ingredient.model')
+const RecipeIngredient = require('../models/recipeIngredient.model')
 
 const getAllRecipes = async (req, res) => {
     try{
@@ -35,10 +37,49 @@ const getRecipeByName = async (req, res) => {
     }
 }
 
+// const createRecipe = async (req, res) => {
+//     try {
+//         const recipe = await new Recipe(req.body)
+//         await recipe.save();
+//         return res.status(201).json({ recipe })
+//     } catch (error) {
+//         return res.status(500).json({ error: error.message })
+//     }
+// }
+
 const createRecipe = async (req, res) => {
     try {
-        const recipe = await new Recipe(req.body)
-        await recipe.save();
+        const { title, description, preparation, diet, meal, prep_time, cook_time, image_path, notes, source, gluten_free, ingredients } = req.body
+
+        const recipe = await Recipe.create({
+            title,
+            description,
+            preparation,
+            diet,
+            meal,
+            prep_time,
+            cook_time,
+            image_path,
+            notes,
+            source,
+            gluten_free
+        })
+
+        for (const ingredientData of ingredients) {
+            let { name, amount, unit, prep } = ingredientData
+
+            let ingredient = await Ingredient.findOne({ name })
+            if (!ingredient) {
+                ingredient = await Ingredient.create({ name })
+            }
+            await RecipeIngredient.create({
+                recipe: recipe._id,
+                ingredient: ingredient._id,
+                amount,
+                unit,
+                prep,
+            })
+        }
         return res.status(201).json({ recipe })
     } catch (error) {
         return res.status(500).json({ error: error.message })
