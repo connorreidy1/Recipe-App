@@ -5,6 +5,7 @@ const logger = require('morgan')
 const bodyParser = require('body-parser')
 const PORT = process.env.PORT || 3001
 
+const categoryController = require('./controllers/categoryController')
 const recipeController = require('./controllers/recipeController')
 const ingredientController = require('./controllers/ingredientController')
 const unitController = require('./controllers/unitController')
@@ -27,6 +28,11 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.send("Welcome to CookBooklet!")
 })
+
+//Get Categories
+app.get('/categories', categoryController.getAllCategories)
+app.get('/categories/:id', categoryController.getCategoryById)
+app.get('/categories/name/:name', categoryController.getCategoryByName)
 
 // Get Recipes
 app.get('/recipes', recipeController.getAllRecipes)

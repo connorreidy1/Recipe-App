@@ -1,72 +1,72 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     console.log('DOM content loaded');
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM content loaded');
 
-//     const form=document.getElementById('recipe-form')
+    const form=document.getElementById('recipe-form')
 
-//     const titleInput=document.getElementById('title')
-//     const descriptionInput=document.getElementById('description')
-//     const preparationInput=document.getElementById('preparation-step')
-//     const ingredientInput=document.getElementById('ingredient')
-//     const amountInput=document.getElementById('amount')
-//     const unitInput=document.getElementById('unit')
-//     const prepInput=document.getElementById('prep')
-//     const dietInput=document.getElementById('diet')
-//     const mealInput=document.getElementById('meal')
-//     const prepTimeInput=document.getElementById('prep_time')
-//     const cookTimeInput=document.getElementById('cook_time')
-//     const imgPathInput=document.getElementById('img_path')
-//     const notesInput=document.getElementById('notes')
-//     const sourceInput=document.getElementById('source')
-//     const glutenFreeInput=document.getElementById('gluten_free')
+    const titleInput=document.getElementById('title')
+    const descriptionInput=document.getElementById('description')
+    const preparationInput=document.getElementById('preparation-step')
+    const ingredientInput=document.getElementById('ingredient')
+    const amountInput=document.getElementById('amount')
+    const unitInput=document.getElementById('unit')
+    const prepInput=document.getElementById('prep')
+    const dietInput=document.getElementById('diet')
+    const mealInput=document.getElementById('meal')
+    const prepTimeInput=document.getElementById('prep_time')
+    const cookTimeInput=document.getElementById('cook_time')
+    const imgPathInput=document.getElementById('img_path')
+    const notesInput=document.getElementById('notes')
+    const sourceInput=document.getElementById('source')
+    const glutenFreeInput=document.getElementById('gluten_free')
 
-//     const submitButton=document.getElementById('submit')
+    const submitButton=document.getElementById('submit')
 
-//     submitButton.addEventListener('click', async(e) => {
-//         e.preventDefault()
-//         console.log(e.target)
-//         console.log(form.ingredients.value)
-//         const title=titleInput.value
-//         const description=descriptionInput.value
-//         const preparation=preparationInput.value
-//         const ingredient=ingredientInput.value
-//         const amount=amountInput.value
-//         const unit=unitInput.value
-//         const prep=prepInput.value
-//         const diet=dietInput.value
-//         const meal=mealInput.value
-//         const prep_time=prepTimeInput.value
-//         const cook_time=cookTimeInput.value
-//         const img_path=imgPathInput.value
-//         const notes=notesInput.value
-//         const source=sourceInput.value
-//         const gluten_free=glutenFreeInput.value
+    submitButton.addEventListener('click', async(e) => {
+        e.preventDefault()
+        console.log(e.target)
+        console.log(form.ingredients.value)
+        const title=titleInput.value
+        const description=descriptionInput.value
+        const preparation=preparationInput.value
+        const ingredient=ingredientInput.value
+        const amount=amountInput.value
+        const unit=unitInput.value
+        const prep=prepInput.value
+        const diet=dietInput.value
+        const meal=mealInput.value
+        const prep_time=prepTimeInput.value
+        const cook_time=cookTimeInput.value
+        const img_path=imgPathInput.value
+        const notes=notesInput.value
+        const source=sourceInput.value
+        const gluten_free=glutenFreeInput.value
 
-//         let data={
-//             title,
-//             description,
-//             preparation,
-//             ingredient,
-//             amount,
-//             unit,
-//             prep,
-//             diet,
-//             meal,
-//             prep_time,
-//             cook_time,
-//             img_path,
-//             notes,
-//             source,
-//             gluten_free
-//         }
+        let data={
+            title,
+            description,
+            preparation,
+            ingredient,
+            amount,
+            unit,
+            prep,
+            diet,
+            meal,
+            prep_time,
+            cook_time,
+            img_path,
+            notes,
+            source,
+            gluten_free
+        }
         
-//         try {
-//             let response = await axios.post('http://localhost:3001/recipes', data)
-//             console.log(response)
-//         } catch (error) {
-//             console.error('Error adding recipe')
-//         }
-//     })
-// })
+        try {
+            let response = await axios.post('http://localhost:3001/recipes', data)
+            console.log(response)
+        } catch (error) {
+            console.error('Error adding recipe')
+        }
+    })
+})
 
 
 
