@@ -37,16 +37,6 @@ const getRecipeByName = async (req, res) => {
     }
 }
 
-// const createRecipe = async (req, res) => {
-//     try {
-//         const recipe = await new Recipe(req.body)
-//         await recipe.save();
-//         return res.status(201).json({ recipe })
-//     } catch (error) {
-//         return res.status(500).json({ error: error.message })
-//     }
-// }
-
 const createRecipe = async (req, res) => {
     try {
         const { title, description, preparation, diet, meal, prep_time, cook_time, image_path, notes, source, gluten_free, ingredients } = req.body

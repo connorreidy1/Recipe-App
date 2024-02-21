@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CookBoolet</title>
+</head>
+<body>
+    <h1>CookBooklet</h1>
+    <form id="recipe-form">
+        <input type="text" id="title" name="title" placeholder="Title" required><br><br>
+        
+        <input type="text" id="description" name="description" placeholder="Description" required><br><br>
+        
+        <h3>Preparation</h3>
+        <div id="preparation-container">
+            <input type="text" id="preparation-step" name="preparations[]" placeholder="Step 1" required>
+        </div>
+        <button type="button" id="add-step-btn">Add Step</button><br><br>
+
+        <h3>Ingredients:</h3>
+        <div id="ingredient-container">
+            <input type="text" id="ingredient" name="ingredients" placeholder="Ingredient" style="width: 150px" required>
+            <input type="number" id="amount" name="amounts" placeholder="Qty" style="width: 30px" required>
+            <input type="text" id="unit" name="units" placeholder="Meas" style="width: 50px" >
+            <input type="text" id="prep" name="preps" placeholder="prep" style="width: 70px" >
+        </div>
+        <button type="button" id="add-ingredient-btn">Add Ingredient</button><br><br>
+        
+        <input type="text" id="diet" name="diet" placeholder="Diet Type"><br><br>
+        
+        <input type="text" id="meal" name="meal" placeholder="Meal Type" required><br><br>
+        
+        <label for="prep_time">Prep Time:</label>
+        <input type="number" id="prep_time" name="prep_time" placeholder="mins" required><br><br>
+        
+        <label for="cook_time">Cook Time:</label>
+        <input type="number" id="cook_time" name="cook_time" placeholder="mins" required><br><br>
+        
+        <label for="img_path">Add an image:</label>
+        <input type="text" id="img_path" name="img_path" placeholder="Image url" ><br><br>
+        
+        <label for="notes">Notes:</label>
+        <input type="text" id="notes" name="notes" placeholder="Notes"><br><br>
+        
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" placeholder="Source"><br><br>
+        
+        <label for="gluten_free">Gluten Free:</label>
+        <input type="checkbox" id="gluten_free" name="gluten_free"><br><br>
+    
+        <button type="submit" id="submit">Add Recipe</button>
+    </form>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/addrecipe.js"></script>
+</body>
+</html>

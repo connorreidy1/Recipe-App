@@ -55,4 +55,5 @@ app.get('/units/name/:name', unitController.getUnitByName)
 // Get RecipeIngredients
 app.get('/recipeingredients', recipeIngredientController.getAllRecipeIngredients)
 app.get('/recipeingredients/:id', recipeIngredientController.getRecipeIngredientById)
-
+  //Delete RecipeIngredients 
+  app.delete('/recipeingredients/:id', recipeIngredientController.deleteRecipeIngredient)

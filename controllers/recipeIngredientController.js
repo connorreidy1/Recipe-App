@@ -22,7 +22,21 @@ const getRecipeIngredientById = async (req, res) => {
     }
 }
 
+const deleteRecipeIngredient = async (req, res) => {
+    try {
+        const { id } = req.params
+        const deleted = await RecipeIngredient.findByIdAndDelete(id)
+        if (deleted) {
+            return res.status(200).send('RecipeIngredient deleted')
+        }
+        throw new Error('RecipeIngredient not found')
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
+
 module.exports = {
     getAllRecipeIngredients,
     getRecipeIngredientById,
+    deleteRecipeIngredient
 }
