@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const baseURL = 'http://localhost:3001/'
 
     const responseCategories = await axios.get(`${baseURL}categories`)
-    const categoryData = responseCategories.data.data
+    const categoryData = responseCategories.data
+    console.log(responseCategories.data)
 
     const categoriesContainer = document.querySelector('#categories-container')
 
@@ -16,5 +17,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const categoryImage = document.createElement('img')
         categoryImage.classList.add('category-image')
+        categoryImage.alt = 'Category Image'
+        categoryImage.src = category.img_path
+
+        const categoryName = document.createElement('h2')
+        categoryName.classList.add('category-name')
+        categoryName.innerText = category.name 
+
+        categorySection.appendChild(categoryImage)
+        categorySection.appendChild(categoryName)
+
+        categoriesContainer.appendChild(categorySection)
+
+        categorySection.addEventListener('click', () => {
+            
+        })
+
     })
 })
