@@ -1,0 +1,22 @@
+body {
+    font-family: "Red Hat Display", sans-serif;
+    /* background-color:green; */
+    overflow: scroll; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 25px;
+}

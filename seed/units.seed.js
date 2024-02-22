@@ -7,7 +7,9 @@ const main = async() => {
     const units = [
         {name: 'tsp'},
         {name: 'tbsp'},
+        {name: 'heaped tbsp'},
         {name: 'cup'},
+        {name: "packed cup"},
         {name: 'ounce'},
         {name: 'oz'},
         {name: 'pound'},
@@ -29,7 +31,11 @@ const main = async() => {
         {name: 'pack'},
         {name: 'large'},
         {name: 'medium'},
-        {name: 'small'}
+        {name: 'small'},
+        {name: 'slices'},
+        {name: 'leaves'},
+        {name: 'bag'},
+        
     ]
     try {
         // Remove existing units in case of re-seeding

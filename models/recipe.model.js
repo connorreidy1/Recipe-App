@@ -7,7 +7,7 @@ const recipeSchema = new mongoose.Schema(
         description: {type: String, required: true},
         preparation: [{type: String, required: true}],
         diet: {type: String, enum: ['vegetarian', 'vegan', 'paleo'], default: null},
-        meal: {type: String, enum: ['breakfast', 'lunch', 'snack', 'dinner', 'dessert'], default: null},
+        meal: {type: String, enum: ['breakfast', 'lunch', 'snack', 'dinner', 'dessert'], required: true},
         prep_time: {type: Number},
         cook_time: {type: Number},
         img_path: {type: String},
@@ -16,10 +16,10 @@ const recipeSchema = new mongoose.Schema(
         gluten_free: {type: Boolean, default: false},
         ingredients: [
             {
-                ingredient: {type: mongoose.Schema.Types.ObjectId, ref: 'Ingredient'},
+                ingredientId: {type: mongoose.Schema.Types.ObjectId, ref: 'Ingredient'},
                 amount: {type: Number, required: true},
                 unitId: {type: mongoose.Schema.Types.ObjectId, ref: 'Unit'},
-                prep: {type: String, enum: ['finely chopped', 'chopped', 'coarsely chopped', 'roughly chopped', 'grated', 'finely grated', 'thinly sliced', 'juiced', 'melted', 'softened', 'minced', 'finely diced', 'finely sliced', 'shredded', 'warmed', 'heaped', null], default: null} 
+                prep: {type: String, enum: ['finely chopped', 'chopped', 'coarsely chopped', 'roughly chopped', 'grated', 'finely grated', 'thinly sliced', 'sliced', 'juiced', 'melted', 'softened', 'minced', 'diced', 'finely diced', 'finely sliced', 'shredded', 'warmed', 'heaped', 'halved', 'halved crosswise', 'quartered', 'sifted', 'beaten', 'cubed', null], default: null} 
             }
         ]
     },
