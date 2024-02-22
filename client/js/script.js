@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const categorySection = document.createElement('section')
         categorySection.classList.add('category-container')
 
+        const imgContainer = document.createElement('div') 
+        imgContainer.classList.add('img-container')
+
         const categoryImage = document.createElement('img')
         categoryImage.classList.add('category-image')
         categoryImage.alt = 'Category Image'
@@ -22,14 +25,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const categoryName = document.createElement('h2')
         categoryName.classList.add('category-name')
-        categoryName.innerText = category.name 
+        categoryName.innerText = category.name.charAt(0).toUpperCase() + category.name.slice(1)
 
-        categorySection.appendChild(categoryImage)
+        imgContainer.appendChild(categoryImage)
+        categorySection.appendChild(imgContainer) 
+
         categorySection.appendChild(categoryName)
 
         categoriesContainer.appendChild(categorySection)
 
         categorySection.addEventListener('click', () => {
+            const categoryURL = `${baseURL}recipes/meal/${category.name.toLowerCase()}`
+            window.location.href = `meal.html?category=${categoryURL}`
             
         })
 
