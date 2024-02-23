@@ -30,7 +30,7 @@ Recipe app capable of storing, adding, and updating recipes.
 - Fork the Repository: Click on the "Fork" button at the top right corner of the repository page to create your copy of the project.
 - Clone the Repository: Copy the URL of your forked repository and run git clone <repository-url> in your terminal.
 - Install Dependencies: Navigate to the project directory and run npm install to install all required dependencies, including inti -y, mongoose, express, cors, nodemon, body-parser, morgan.
-- Run the Project: Start the server by running npm start or nodemon.
+- Run the Project: Start the server by running npm run dev.
 ## Features
 - Page navigation between meal categories and recipe-specific pages.
 - Menu page that slides out over every page and offers an "Add recipe" and "Settings" section
