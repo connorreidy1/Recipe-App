@@ -1,0 +1,128 @@
+{
+    "category": "breakfast",
+    "title": "Test Title",
+    "description": "Test Description",
+    "preparation": ["Step 1", "Step 2", "Step 3"],
+    "diet": "vegetarian",
+    "meal": "breakfast",
+    "prep_time": 10,
+    "cook_time": 10,
+    "img_path": "https://paperandinkprinting.com/wp-content/uploads/2019/08/canstockphoto22402523-arcos-creator.com_-1024x1024.jpg",
+    "notes": "No notes! It's perfect",
+    "source": "Interwebz",
+    "gluten_free": true,
+    "ingredients": [
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "clove",
+        "prep": "diced"
+      },
+      {
+        "name": "whole milk",
+        "amount": 1,
+        "unit": "cup",
+        "prep": null
+      },
+      {
+        "name": "feta cheese",
+        "amount": 3,
+        "unit": "tbsp",
+        "prep": "cubed"
+      }
+    ]
+  }
+
+
+  
+
+  {
+    "category": "dinner",
+    "title": "Chicken Piccata",
+    "description": "A fast, simple yet impressive meal for weeknights or weekends.",
+    "preparation": [
+        "Prepare chicken cutlets by slicing the chicken breasts horizontally, butterflying them open. If the breast pieces you are working with are large, you may want to cut them each into two pieces. If the pieces are still thick after butterflying, put them between two pieces of plastic wrap and pound them with a meat hammer to 1/4-inch thickness.", 
+        "Mix together the flour, salt, pepper, and grated Parmesan. Rinse the chicken pieces in water. Dredge them thoroughly in the flour mixture, until well coated.", 
+        "Heat olive oil and 2 tablespoons of the butter in a large skillet on medium high heat. Add half of the chicken pieces, do not crowd the pan. Brown well on each side, about 3 minutes per side. Remove the chicken from the pan and reserve to a plate.",
+        "Cook the other breasts and remove from the pan. Place the breasts on a rack over a roasting pan and keep warm in a 225°F oven while you prepare the sauce.",
+        "Add the chicken stock or white wine, lemon juice, and capers to the pan. Use a spatula to scrape up the browned bits. Reduce the sauce by half.",
+        "Whisk in the remaining 2 tablespoons of butter.",
+        "Plate the chicken and serve with the sauce poured over the chicken. Sprinkle with parsley."
+    ],
+    "diet": null,
+    "meal": "dinner",
+    "prep_time": 10,
+    "cook_time": 20,
+    "img_path": "https://live.staticflickr.com/65535/53546932140_890b4ab596_b.jpg",
+    "notes": "Served over spaghetti drizzled with some extra sauce.",
+    "source": "Simply Recipe",
+    "gluten_free": false,
+    "ingredients": [
+      {
+        "name": "boneless-skinless chicken breast",
+        "amount": 2,
+        "unit": "large",
+        "prep": "halved"
+      },
+      {
+        "name": "flour",
+        "amount": 1,
+        "unit": "cup",
+        "prep": null
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "prep": null
+      },
+      {
+        "name": "pepper",
+        "amount": 1,
+        "unit": "pinch",
+        "prep": null
+      },
+      {
+        "name": "parmesan",
+        "amount": 3,
+        "unit": "tsp",
+        "prep": null
+      },
+      {
+        "name": "extra-virgin olive oil",
+        "amount": 4,
+        "unit": "tbsp",
+        "prep": null
+      },
+      {
+        "name": "butter",
+        "amount": 4,
+        "unit": "tsp",
+        "prep": null
+      },
+      {
+        "name": "chicken stock",
+        "amount": 1,
+        "unit": "cup",
+        "prep": null
+      },
+      {
+        "name": "lemon juice",
+        "amount": 2,
+        "unit": "tbsp",
+        "prep": null
+      },
+      {
+        "name": "brined capers",
+        "amount": 3,
+        "unit": "tbsp",
+        "prep": null
+      },
+      {
+        "name": "parsley",
+        "amount": 2,
+        "unit": "tbsp",
+        "prep": "chopped"
+      }
+    ]
+  }

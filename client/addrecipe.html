@@ -40,7 +40,15 @@
     <div id="categories-container"></div>
 
     <form id="recipe-form">
-        <input type="text" id="category" name="category" placeholder="Category" required><br><br>
+        <h2 id="add-recipe-title">Add recipe</h2>
+        <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="snack">Snack</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
 
         <input type="text" id="title" name="title" placeholder="Title" required><br><br>
         
@@ -54,34 +62,47 @@
 
         <h3>Ingredients:</h3>
         <div id="ingredient-container">
-            <input type="text" id="ingredient" name="ingredient[]" placeholder="Ingredient" style="width: 150px" required>
-            <input type="number" id="amount" name="amount[]" placeholder="Qty" style="width: 30px" required>
-            <input type="text" id="unit" name="unit[]" placeholder="Meas" style="width: 50px" >
-            <input type="text" id="prep" name="prep[]" placeholder="prep" style="width: 70px" >
-            <button type="button" class="remove-ingredient-btn">Remove</button>
+            <div id="ingredient">
+                <input type="text" id="ingredient" name="ingredient[]" placeholder="Ingredient" style="width: 150px" required>
+                <input type="number" id="amount" name="amount[]" placeholder="Qty" style="width: 30px" required>
+                <input type="text" id="unit" name="unit[]" placeholder="Meas" style="width: 50px" >
+                <input type="text" id="prep" name="prep[]" placeholder="prep" style="width: 70px" >
+            </div>
         </div>
-        <button type="button" id="add-ingredient-btn">Add Ingredient</button><br><br>
+        <button type="button" id="add-ingredient-btn">Add Ingredient</button><br><br><br>
         
-        <input type="text" id="diet" name="diet" placeholder="Diet Type"><br><br>
+        <select id="diet" name="diet" required>
+            <option value="">Diet</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="paleo">Paleo</option>
+        </select><br><br>
         
-        <input type="text" id="meal" name="meal" placeholder="Meal Type" required><br><br>
+        <select id="meal" name="meal" required>
+            <option value="">Meal Type</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="snack">Snack</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
         
-        <label for="prep_time">Prep Time:</label>
+        <h4>Prep Time</h4>
         <input type="number" id="prep_time" name="prep_time" placeholder="mins" required><br><br>
         
-        <label for="cook_time">Cook Time:</label>
+        <h4>Cook Time</h4>
         <input type="number" id="cook_time" name="cook_time" placeholder="mins" required><br><br>
         
-        <label for="img_path">Add an image:</label>
+        <h4>Add an image</h4>
         <input type="text" id="img_path" name="img_path" placeholder="Image url" ><br><br>
         
-        <label for="notes">Notes:</label>
-        <input type="text" id="notes" name="notes" placeholder="Notes"><br><br>
+        <h4>Notes</h4>
+        <textarea type="text" id="notes" name="notes" placeholder="Notes" rows="4" cols="40"style="font-family: Roboto, sans-serif;"></textarea><br><br>
         
-        <label for="source">Source:</label>
+        <h4>Source</h4>
         <input type="text" id="source" name="source" placeholder="Source"><br><br>
         
-        <label for="gluten_free">Gluten Free:</label>
+        <h4>Gluten free</h4>
         <input type="checkbox" id="gluten_free" name="gluten_free"><br><br>
     
         <button type="submit" id="submit">Add Recipe</button>

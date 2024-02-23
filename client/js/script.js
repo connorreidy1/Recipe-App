@@ -1,12 +1,12 @@
 console.log('working')
 //Menu
-const overlay = document.getElementById('overlay');
-const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay')
+const menu = document.getElementById('menu')
 
 function toggleMenu() {
-    document.body.classList.toggle('menu-open'); // Toggle class to show/hide overlay and slide menu
+    document.body.classList.toggle('menu-open') // Toggle class to show/hide overlay and slide menu
 }
-overlay.addEventListener('click', toggleMenu); 
+overlay.addEventListener('click', toggleMenu) 
 
 //Add recipe btn
 document.getElementById('add-recipe-btn').addEventListener('click', function() {

@@ -109,8 +109,10 @@ const main = async() => {
         {name: "feta cheese"},
         {name: "dried oregano"},
         {name: "red wine vinegar"},
-        
-
+        {name: "chicken stock"},
+        {name: "parsley"},
+        {name: "brined capers"}
+    
     ]
     
     try {

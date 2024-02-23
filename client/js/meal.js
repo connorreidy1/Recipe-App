@@ -4,13 +4,13 @@ document.getElementById('cookbooklet-title').addEventListener('click', function(
     window.location.href = 'index.html'
 })
 //Menu
-const overlay = document.getElementById('overlay');
-const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay')
+const menu = document.getElementById('menu')
 
 function toggleMenu() {
-    document.body.classList.toggle('menu-open'); // Toggle class to show/hide overlay and slide menu
+    document.body.classList.toggle('menu-open') // Toggle class to show/hide overlay and slide menu
 }
-overlay.addEventListener('click', toggleMenu); 
+overlay.addEventListener('click', toggleMenu)
 
 //Add recipe btn
 document.getElementById('add-recipe-btn').addEventListener('click', function() {
@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const mealCategory = recipesData.length > 0 ? recipesData[0].meal : ''
     
-    const mealTitleContainer = document.createElement('div');
-    mealTitleContainer.classList.add('meal-title-container');
+    const mealTitleContainer = document.createElement('div')
+    mealTitleContainer.classList.add('meal-title-container')
 
     const mealTitle = document.createElement('h1')
     mealTitle.classList.add('meal-title')
