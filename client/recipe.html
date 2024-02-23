@@ -12,9 +12,22 @@
     <title>CookBoolet</title>
 </head>
 <body>
+    <div id="overlay"></div>
+    <div id="menu" class="menu">
+        <div class="add-recipe-container">
+            <button id="add-recipe-btn">+</button>
+            <h2 id="add-recipe-text">Add recipe</h2>
+        </div>
+        <div class="settings-container">
+            <img src="/assets/imgs/settings-icon.png" id="settings-icon" width="15px" height ="15px">
+            <h2 id="settings-text">Settings</h2>
+        </div>
+    </div>
     <header id="header-container">
-        <div id="menu-icon-container">
-            <img src="/assets/imgs/menu-icon.png" id="menu-icon" width="20px" height="20px">
+        <div id="menu-container">
+            <div id="menu-icon-container" onclick="toggleMenu()">
+                <img src="/assets/imgs/menu-icon.png" id="menu-icon" width="20px" height="20px">
+            </div>
         </div>
         <div id="app-title-container">
             <h1 id="cookbooklet-title">CookBooklet</h1>

@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="js/addrecipe.js"></script>
+    <link rel="stylesheet" href="css/addrecipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
     <title>CookBoolet</title>
 </head>
 <body>
-    <h1>CookBooklet</h1>
+    <div id="overlay"></div>
+    <header id="header-container">
+        <div id="menu-container">
+            <div id="menu-icon-container" onclick="toggleMenu()">
+                <img src="/assets/imgs/menu-icon.png" id="menu-icon" width="20px" height="20px">
+            </div>
+        </div>
+        <div id="menu" class="menu">
+            <div class="add-recipe-container">
+                <button id="add-recipe-btn">+</button>
+                <h2 id="add-recipe-text">Add recipe</h2>
+            </div>
+            <div class="settings-container">
+                <img src="/assets/imgs/settings-icon.png" id="settings-icon" width="15px" height ="15px">
+                <h2 id="settings-text">Settings</h2>
+            </div>
+        </div>
+        <div id="app-title-container">
+            <h1 id="cookbooklet-title">CookBooklet</h1>
+        </div>
+        <div id="search-icon-container">
+            <img src="/assets/imgs/search.png" id="search-icon" width="20px" height="20px">
+        </div>
+    </header>
+    <div id="categories-container"></div>
+
     <form id="recipe-form">
+        <input type="text" id="category" name="category" placeholder="Category" required><br><br>
+
         <input type="text" id="title" name="title" placeholder="Title" required><br><br>
         
         <input type="text" id="description" name="description" placeholder="Description" required><br><br>
@@ -21,10 +54,11 @@
 
         <h3>Ingredients:</h3>
         <div id="ingredient-container">
-            <input type="text" id="ingredient" name="ingredients" placeholder="Ingredient" style="width: 150px" required>
-            <input type="number" id="amount" name="amounts" placeholder="Qty" style="width: 30px" required>
-            <input type="text" id="unit" name="units" placeholder="Meas" style="width: 50px" >
-            <input type="text" id="prep" name="preps" placeholder="prep" style="width: 70px" >
+            <input type="text" id="ingredient" name="ingredient[]" placeholder="Ingredient" style="width: 150px" required>
+            <input type="number" id="amount" name="amount[]" placeholder="Qty" style="width: 30px" required>
+            <input type="text" id="unit" name="unit[]" placeholder="Meas" style="width: 50px" >
+            <input type="text" id="prep" name="prep[]" placeholder="prep" style="width: 70px" >
+            <button type="button" class="remove-ingredient-btn">Remove</button>
         </div>
         <button type="button" id="add-ingredient-btn">Add Ingredient</button><br><br>
         
@@ -52,8 +86,5 @@
     
         <button type="submit" id="submit">Add Recipe</button>
     </form>
-    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="js/addrecipe.js"></script>
 </body>
 </html>

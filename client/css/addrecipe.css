@@ -13,8 +13,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 3; 
-  
+    z-index: 1000; 
+    display: none;
 }
 .menu-open #overlay {
     display: block; 
@@ -27,7 +27,7 @@ body {
     height: 100%;
     background-color: white;
     transition: left 0.3s ease;
-    z-index: 4;
+    z-index: 2000;
 }
 .menu-open #menu {
     left: 0; 
@@ -37,8 +37,6 @@ body {
     flex-direction: row;
     align-items: center;
     margin: 50px 0px 0px 30px;
-    position: relative; 
-    z-index: 4;
 }
 #add-recipe-text {
     font-size: 16px;
@@ -71,6 +69,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 /* Header */
 #header-container {
     background-color: white;
@@ -106,14 +105,12 @@ h1 {
     width: 95%;;
     z-index: 1
 }
-
 .category-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
 .category-name {
     margin-top: 0px;
     font-size: 12px;
@@ -121,7 +118,6 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-
 .category-image {
     width: 65px;
     height: 65px;
@@ -129,73 +125,7 @@ h1 {
     object-fit: cover;
 }
 
-/* Recipe */
-#recipe-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 178px;
-}
-
-.recipe-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-.recipe-title {
-    margin: 25px 0px 20px 0px;
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-p, ul, ol, li {
-    font-size: 16px;
-    font-weight: 400;
-}
-h2 {
-    font-size: 20px;
-    font-weight: 600;
-}
-h3 {
-    font-size: 16px;
-    font-weight: 600;
-}
-.title-description-section{
-    width: 90%;
-    margin: 0 auto;
-}
-.ingredients-section {
-    width: 90%;
-    margin: 0 auto;
-}
-.preparation-section{
-    width: 90%;
-    margin: 0 auto;
-}
-.ingredients-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-.ingredients-list li {
-    padding-bottom: 10px; 
-}
-.preparation-list {
-    padding-left: 5%;
-}
-.preparation-list li {
-    padding-bottom: 10px; 
-}
-.notes-source-section{
-    width: 90%;
-    margin: 0 auto;
-}
-.notes-title, .source-title {
-    margin-bottom: -10px;
-}
-hr {
-    width: 90%;
-    height: 1px;
-    background-color: rgb(58, 58, 58);
-    border: none;
-    margin-left: 5%;
+/* Form */
+#recipe-form {
+    margin-top: 230px;
 }

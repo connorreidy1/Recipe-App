@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: "Red Hat Display", sans-serif;
-    /* background-color:green; */
+    font-family: "Roboto", sans-serif;
     overflow: scroll; 
 }
+
 /* Menu */
 #overlay {
     display: none;
@@ -13,8 +13,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); 
-    z-index: 1000; 
-    display: none;
+    z-index: 3; 
+  
 }
 .menu-open #overlay {
     display: block; 
@@ -27,29 +27,64 @@ body {
     height: 100%;
     background-color: white;
     transition: left 0.3s ease;
-    z-index: 2000;
+    z-index: 4;
 }
 .menu-open #menu {
     left: 0; 
 }
-
-#add-recipe-btn {
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
+.add-recipe-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0px 0px 30px;
+    position: relative; 
+    z-index: 4;
+}
+#add-recipe-text {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#add-recipe-btn{
+    border: none;
+    font-size: 20px;
+    padding-right: 10px;
+    background-color: white;
+}
+.settings-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 0px 0px 30px;
+}
+#settings-icon{
+    border: none;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: white;
+}
+#settings-text {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Header */
 #header-container {
-    /* background-color: red; */
+    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 20px 10px 20px;
-
+    padding: 10px 20px 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 2;
 }
-
 h1 {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -58,27 +93,26 @@ h1 {
     font-size: 25px;
 }
 
+/* Categories */
 #categories-container{
-    
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px 0px 10px;
     margin-top: -10px;
-
-    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 85px;
+    width: 95%;;
+    z-index: 1
 }
-
 .category-container {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
 }
-
 .category-name {
     margin-top: 0px;
     font-size: 12px;
@@ -86,8 +120,6 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-
-
 .category-image {
     width: 65px;
     height: 65px;

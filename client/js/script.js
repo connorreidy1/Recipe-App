@@ -6,9 +6,14 @@ const menu = document.getElementById('menu');
 function toggleMenu() {
     document.body.classList.toggle('menu-open'); // Toggle class to show/hide overlay and slide menu
 }
-
 overlay.addEventListener('click', toggleMenu); 
 
+//Add recipe btn
+document.getElementById('add-recipe-btn').addEventListener('click', function() {
+    window.location.href = 'addrecipe.html'
+})
+
+//Header
 document.addEventListener('DOMContentLoaded', async () => {
     const baseURL = 'http://localhost:3001/'
 

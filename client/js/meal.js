@@ -1,9 +1,21 @@
 console.log('working')
 //Title click ->Landing Page
 document.getElementById('cookbooklet-title').addEventListener('click', function() {
-    window.location.href = 'index.html';
-});
+    window.location.href = 'index.html'
+})
+//Menu
+const overlay = document.getElementById('overlay');
+const menu = document.getElementById('menu');
 
+function toggleMenu() {
+    document.body.classList.toggle('menu-open'); // Toggle class to show/hide overlay and slide menu
+}
+overlay.addEventListener('click', toggleMenu); 
+
+//Add recipe btn
+document.getElementById('add-recipe-btn').addEventListener('click', function() {
+    window.location.href = 'addrecipe.html'
+})
 
 const baseURL = 'http://localhost:3001/'
 //Categories
