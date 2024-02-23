@@ -22,10 +22,10 @@ Recipe app capable of storing, adding, and updating recipes.
 - The recipeIngredient junction table was scrapped, so Ingredient and Unit connect directly to Recipe now.
 - And the User schema become a Categoriy schema.
 ## Wireframe / Figma
-![ERD](CookBookletHomePage-Light.png)
-![ERD](CookBookletHomePage-DarkMode.png)
-![ERD](CookBookletMenu.png)
-![ERD](CookBookletHomePage-DarkMode.png)
+![ERD](assets/figma/CookBookletHomePage-Light.png)
+![ERD](assets/figma/CookBookletHomePage-DarkMode.png)
+![ERD](assets/figma/CookBookletMenu.png)
+![ERD](assets/figma/CookBookletHomePage-DarkMode.png)
 ## Instructions for Forking, Cloning, and Setting Up the Project
 - Fork the Repository: Click on the "Fork" button at the top right corner of the repository page to create your copy of the project.
 - Clone the Repository: Copy the URL of your forked repository and run git clone <repository-url> in your terminal.
