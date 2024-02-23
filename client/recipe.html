@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script defer src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/recipe.js"></script>
+    <link rel="stylesheet" href="css/recipe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>CookBoolet</title>
 </head>
 <body>
-    <div id="overlay"></div>
     <header id="header-container">
-        <div id="menu-container">
-            <div id="menu-icon-container" onclick="toggleMenu()">
-                <img src="/assets/imgs/menu-icon.png" id="menu-icon" width="20px" height="20px">
-            </div>
-        </div>
-        <div id="menu" class="menu">
-            <button id="add-recipe-btn">+ Add Recipe</button>
-            <!-- Add other menu items as needed -->
+        <div id="menu-icon-container">
+            <img src="/assets/imgs/menu-icon.png" id="menu-icon" width="20px" height="20px">
         </div>
         <div id="app-title-container">
             <h1 id="cookbooklet-title">CookBooklet</h1>
@@ -30,7 +23,8 @@
             <img src="/assets/imgs/search.png" id="search-icon" width="20px" height="20px">
         </div>
     </header>
-    <div id="categories-container">
-</div>
+    <div id="categories-container"></div>
+    <div id="recipe-container"></div>
+
 </body>
 </html>

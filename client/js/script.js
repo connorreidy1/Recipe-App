@@ -1,7 +1,14 @@
 console.log('working')
-//Landing Page
+//Menu
+const overlay = document.getElementById('overlay');
+const menu = document.getElementById('menu');
 
-//Categories
+function toggleMenu() {
+    document.body.classList.toggle('menu-open'); // Toggle class to show/hide overlay and slide menu
+}
+
+overlay.addEventListener('click', toggleMenu); 
+
 document.addEventListener('DOMContentLoaded', async () => {
     const baseURL = 'http://localhost:3001/'
 

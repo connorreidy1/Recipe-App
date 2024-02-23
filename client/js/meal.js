@@ -1,10 +1,14 @@
 console.log('working')
-//Landing Page
+//Title click ->Landing Page
+document.getElementById('cookbooklet-title').addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
 
+
+const baseURL = 'http://localhost:3001/'
 //Categories
 document.addEventListener('DOMContentLoaded', async () => {
-    const baseURL = 'http://localhost:3001/'
-
+   
     const responseCategories = await axios.get(`${baseURL}categories`)
     const categoryData = responseCategories.data
     console.log(responseCategories.data)
@@ -89,5 +93,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         recipeContainer.appendChild(recipeSource)
 
         recipesContainer.appendChild(recipeContainer)
+
+        recipeContainer.addEventListener('click', () => {
+            const recipeURL = `${baseURL}recipes/${recipe._id}`
+            window.location.href = `recipe.html?recipe=${recipeURL}`
+        })
     })
 })
